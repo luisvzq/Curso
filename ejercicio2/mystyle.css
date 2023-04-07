@@ -1,0 +1,41 @@
+body{text-align: center;}
+
+/* poner en uno al lado del otro las opciones del header en color negro y sin el subrayado */
+.principal a {
+    color: black;
+    text-decoration: none;
+}
+
+/* ajusta a imagen para que no sea demasiado grande y poner debajo el texto con un tamaño adecuado de con un fonde gris a todo imagen y texto */
+#imagen1 {
+    /* width: 25px; */
+    /* width: 25%; */
+    width: 15vw;
+    /* height: 10vh; */
+}
+
+.imagentexto {
+    background-color: grey;
+    width: 15vw;
+    padding: 20px;
+}
+
+/* ajusta el texto a la derecha de la imagen  */
+.derechaIzquierda {
+    /* sirve para poner en horizontal */
+    display: flex;
+    justify-content: space-around;
+}
+
+#subtitulo {
+font-size: 15px;
+}
+
+
+#animacion {
+    max-width: 25vw;
+}
+
+#animacion:hover {
+    color: blue;
+}
