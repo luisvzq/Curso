@@ -54,9 +54,9 @@ class Depositar(CuentaBancaria):
     def __str__(self, depositonuevo):
         return f"{self.depositonuevo}"
 
-    def depositonuevo(self, saldo, deposito, depositonuevo):
-        return self.deposito + self.saldo
-    deposito = int(input("Introduzca el importe a depositar "))
+    def depositonuevo(saldo):
+        deposito = int(input("Introduzca el importe a depositar "))
+        return deposito + saldo
 
     print(datos.titular, "con el número de cuenta",
-          datos.numero, "tiene", depositonuevo, "€.")
+          datos.numero, "tiene", depositonuevo(datos.saldo), "€.")
